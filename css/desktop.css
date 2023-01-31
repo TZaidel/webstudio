@@ -1,0 +1,121 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
+  .header {
+    padding-bottom: 24px;
+  }
+  .header-item {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    position: relative;
+  }
+  .header-item.current::after {
+    bottom: -24px;
+  }
+  .header-contact {
+    flex-direction: row;
+  }
+
+  .contact {
+    font-size: 16px;
+  }
+  .contact-tel {
+    margin-right: 0px;
+  }
+
+  .hero {
+    padding-top: 188px;
+    max-width: 100%;
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office\ 1.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office_2x.jpg);
+    }
+  }
+
+  .about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .about-list-i {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 8px;
+  }
+  .test-link {
+    width: 100%;
+    height: 100%;
+    background: #f4f4fd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-icon {
+    fill: #000000;
+  }
+  .about-item,
+  .about-item-m {
+    width: 264px;
+    margin-bottom: 0;
+  }
+  .about-item-i {
+    width: calc((100% - 72px) / 4);
+    height: 122px;
+  }
+  .about-list {
+    display: flex;
+    gap: 24px;
+  }
+  .about-list-title {
+    text-align: start;
+  }
+  .about-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .about-description {
+    font-weight: 400;
+  }
+
+  .we-do {
+    display: flex;
+    padding-bottom: 120px;
+  }
+
+  .team {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .customers-item-i {
+    width: calc((100% - 120px) / 6);
+  }
+  .foot-container-4 {
+    margin-top: 0;
+  }
+  .btn-foot {
+    align-self: center;
+  }
+  .foot-input {
+    width: 264px;
+  }
+}
