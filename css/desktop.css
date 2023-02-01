@@ -16,6 +16,7 @@
   }
   .header-contact {
     flex-direction: row;
+    gap: 40px;
   }
 
   .contact {
@@ -117,5 +118,11 @@
   }
   .foot-input {
     width: 264px;
+  }
+  .foot-container-1 {
+    margin-right: 120px;
+  }
+  .foot-container-2 {
+    margin-right: 80px;
   }
 }

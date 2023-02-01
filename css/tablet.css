@@ -41,9 +41,10 @@
   .header-contact {
     display: flex;
     flex-direction: column;
-    margin-right: 0;
+    margin-left: auto;
     justify-content: end;
   }
+
   .contact {
     display: flex;
     font-weight: 400;
@@ -86,11 +87,23 @@
     max-width: 496px;
   }
 
+  .about-list {
+    column-gap: 24px;
+  }
+  .about-list-title {
+    text-align: start;
+  }
   .about-item-i {
     width: calc((100% - 48px) / 2);
     height: 112px;
   }
+
+  .about-item-i:nth-child(n + 3) {
+    margin-bottom: 0;
+  }
   .about-item {
+    display: flex;
+    flex-direction: column;
     width: 356px;
   }
   .about-item-m {
@@ -108,12 +121,17 @@
     column-gap: 24px;
     row-gap: 64px;
   }
+
   .customers-item-i {
-    width: calc((100% - 72px) / 3);
+    min-width: 168px;
+    max-width: 168px;
+    width: calc((100% - 96px) / 3);
   }
   .customers-list {
     column-gap: 24px;
     row-gap: 72px;
+
+    justify-content: center;
   }
 
   .foot-cont {

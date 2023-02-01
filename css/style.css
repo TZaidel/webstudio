@@ -38,7 +38,6 @@ a {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid blue;
   margin-left: auto;
   margin-right: auto;
 }
@@ -88,6 +87,11 @@ a {
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
 }
 .menu-open {
   display: flex;
@@ -99,6 +103,9 @@ a {
   cursor: pointer;
   border: none;
   stroke: black;
+  position: fixed;
+  top: 24px;
+  right: 15px;
 }
 .mob-m-close {
   width: 24px;
@@ -116,7 +123,7 @@ a {
 }
 .m-list {
   gap: 40px;
-  margin-bottom: 248px;
+  margin-bottom: 50px;
   margin-top: 16px;
 }
 .m-item {
@@ -127,9 +134,11 @@ a {
   color: var(--navy-blue-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .m-item:not(:last-child){
-  margin-bottom: 40px;
-} */
+.m-item:hover,
+.m-item:focus {
+  color: #4d5ae5;
+}
+
 .m-contact {
   flex-wrap: wrap;
   margin-left: auto;
@@ -247,24 +256,17 @@ a {
   padding-top: 96px;
   padding-bottom: 96px;
 }
-.about-list-i {
+.test-link {
   display: none;
-}
-
-.about-item-i {
-  width: calc((100% - 72px) / 4);
   height: 112px;
 }
 
+.about-item-i:not(:last-child) {
+  margin-bottom: 72px;
+}
 .about-item {
   width: 396px;
   margin: 0 auto;
-  margin-bottom: 72px;
-}
-.about-item-m {
-  width: 396px;
-  margin: 0 auto;
-  margin-bottom: 72px;
 }
 .about-list {
   display: flex;
@@ -312,7 +314,6 @@ a {
   background: #f4f4fd;
   padding-top: 96px;
   padding-bottom: 128px;
-  /* 120 */
 }
 .team-main-title {
   font-weight: 600;
@@ -341,13 +342,10 @@ a {
 }
 .team-item {
   width: 264px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team-item:hover,
-.team-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 .team-title {
   margin-bottom: 8px;
 }
@@ -401,6 +399,7 @@ a {
   margin-right: auto;
 }
 .customers-item-i {
+  min-width: 190px;
   width: calc((100% - 32px) / 2);
   height: 88px;
   border-radius: 4px;
@@ -593,7 +592,6 @@ footer {
 .foot-soc-link:focus {
   background: #31d0aa;
 }
-
 .foot-input {
   width: 300px;
   height: 40px;
