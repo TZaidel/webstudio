@@ -259,6 +259,7 @@ a {
 .test-link {
   display: none;
   height: 112px;
+  margin-bottom: 8px;
 }
 
 .about-item-i:not(:last-child) {
