@@ -169,4 +169,7 @@
   .btn-foot {
     align-self: end;
   }
+  .modal {
+    width: 408px;
+  }
 }

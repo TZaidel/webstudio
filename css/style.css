@@ -266,7 +266,7 @@ a {
   margin-bottom: 72px;
 }
 .about-item {
-  width: 396px;
+  max-width: 396px;
   margin: 0 auto;
 }
 .about-list {
@@ -342,7 +342,7 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 .team-item {
-  width: 264px;
+  max-width: 264px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -398,6 +398,7 @@ a {
   row-gap: 72px;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 }
 .customers-item-i {
   min-width: 190px;
@@ -649,7 +650,7 @@ footer {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 408px;
+  width: 100%;
   min-height: 576px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
