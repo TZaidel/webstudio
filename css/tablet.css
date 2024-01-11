@@ -9,7 +9,6 @@
   .header-list {
     display: flex;
     gap: 40px;
-    /* margin-right: 332px; */
   }
   .header-item {
     font-weight: 600;
@@ -21,7 +20,7 @@
     position: relative;
   }
   .header-item.current::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 4px;
@@ -87,6 +86,7 @@
     max-width: 496px;
   }
 
+  /* ----------ABOUT--------- */
   .about-list {
     column-gap: 24px;
   }
@@ -110,10 +110,8 @@
     width: 356px;
     margin-bottom: 0px;
   }
-  /* .team > .container{
-    width: 552px;
-    outline: 1px solid red;
-} */
+
+  /* ----------TEAM--------- */
   .team {
     padding-bottom: 104px;
   }
@@ -122,6 +120,7 @@
     row-gap: 64px;
   }
 
+  /* ----------CUSTOMERS--------- */
   .customers-item-i {
     min-width: 168px;
     max-width: 168px;
@@ -130,16 +129,17 @@
   .customers-list {
     column-gap: 24px;
     row-gap: 72px;
-
     justify-content: center;
   }
 
+  /* ----------FOOTER--------- */
   .foot-cont {
     flex-direction: row;
     justify-content: start;
     width: 526px;
     flex-wrap: wrap;
   }
+
   .foot-container-1 {
     margin-right: 24px;
   }
@@ -169,7 +169,23 @@
   .btn-foot {
     align-self: end;
   }
+
+  /* ----------MODAL--------- */
   .modal {
     width: 408px;
+  }
+
+  /* ----------PORTFOLIO--------- */
+  .portfolio-filter {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
+  .portfolio-list {
+    margin-top: 72px;
+  }
+
+  .portfolio-item {
+    max-width: calc((100% - 48px) / 2);
   }
 }

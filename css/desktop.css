@@ -48,6 +48,7 @@
     }
   }
 
+  /* ----------ABOUT--------- */
   .about {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -94,15 +95,19 @@
     font-weight: 400;
   }
 
+  /* ----------WEDO--------- */
   .we-do {
     display: flex;
     padding-bottom: 120px;
   }
 
+  /* ----------TEAM--------- */
   .team {
     padding-bottom: 120px;
     padding-top: 120px;
   }
+
+  /* ----------CUSTOMERS--------- */
   .customers {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -110,6 +115,8 @@
   .customers-item-i {
     width: calc((100% - 120px) / 6);
   }
+
+  /* ----------FOOTER--------- */
   .foot-container-4 {
     margin-top: 0;
   }
@@ -124,5 +131,10 @@
   }
   .foot-container-2 {
     margin-right: 80px;
+  }
+
+  /* ----------PORTFOLIO--------- */
+  .portfolio-item {
+    max-width: calc((100% - 48px) / 3);
   }
 }

@@ -16,7 +16,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/desktop.css" />
   </head>
@@ -29,12 +28,14 @@
           >
           <ul class="header-list">
             <li>
-              <a href="./index.html" class="header-item current">Studio</a>
+              <a href="./index.html" class="header-item">Studio</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="header-item">Portfolio</a>
+              <a href="./portfolio.html" class="header-item current"
+                >Portfolio</a
+              >
             </li>
-            <li><a href="" class="header-item">Contacts</a></li>
+            <li><a href="#footer" class="header-item">Contacts</a></li>
           </ul>
         </nav>
         <ul class="header-contact">
@@ -65,12 +66,11 @@
           </button>
           <ul class="m-list">
             <li>
-              <a href="./index.html" class="m-item ">Studio</a>
+              <a href="./index.html" class="m-item">Studio</a>
             </li>
             <li>
               <a href="./portfolio.html" class="m-item current">Portfolio</a>
             </li>
-            <li><a href="" class="m-item">Contacts</a></li>
           </ul>
         </div>
         <div class="menu-bottom">
@@ -135,7 +135,7 @@
             </li>
           </ul>
         </div>
-        <div class="container">
+        <div class="container portfolio-container">
           <h2 class="visually-hidden">About</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
@@ -314,7 +314,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="container foot-cont">
         <div class="foot-container-1">
           <a href="" class="footer-logo"
@@ -380,5 +380,6 @@
     </footer>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/filter.js"></script>
   </body>
 </html>
